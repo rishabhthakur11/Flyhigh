@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroImage from "../../public/assets/hero-image1.png";
+import heroImage from "../../public/assets/heroImage.png";
 
 export default function HeroSection() {
   return (
@@ -16,7 +16,7 @@ export default function HeroSection() {
               <h1 className="text-5xl md:text-7xl font-medium text-black leading-tight tracking-wider">
                 The world&apos;s destination for design
               </h1>
-              <p className="mt-6 text-lg leading-8 text-textGray font-semibold mx-auto max-w-3xl">
+              <p className="mt-5 text-lg leading-8 text-textGray font-semibold mx-auto max-w-3xl">
                 Get inspired by the work of millions of top-rated designers &
                 agencies around the world.
               </p>
@@ -33,11 +33,9 @@ export default function HeroSection() {
           <div className="-z-10">
             <Image
               src={heroImage}
-              width={100}
-              height={100}
-              layout="responsive"
+              width={700}
               alt="heroImage"
-              className="lg:-m-[140px] lg:mx-auto"
+              className="lg:mx-auto"
               priority
             />
           </div>
