@@ -11,9 +11,9 @@ import { UserButton } from "@clerk/nextjs";
 type Props = {};
 
 function Navbar({}: Props) {
-  const { userId } = useAuth();
+  const {isSignedIn } = useAuth();
   return (
-    <div className="flex py-5 items-center px-5">
+    <div className="flex py-5 items-center px-5 navbar">
       {/* leftSide */}
       <div className="flex gap-x-24 text-black  items-center grow">
         <Link href="/">
@@ -31,8 +31,15 @@ function Navbar({}: Props) {
 
       <div>
         <div className="hidden lg:flex gap-x-7 text-lg text-black font-normal items-center">
-          {userId ? (
-            <UserButton afterSignOutUrl="/" />
+          {isSignedIn ? (
+            <>
+              <Link href="/create-project">
+                <Button>
+                  <p>Create Project</p>
+                </Button>
+              </Link>
+              <UserButton afterSignOutUrl="/" />
+            </>
           ) : (
             <SignInButton afterSignInUrl="/dashboard">
               <Button>

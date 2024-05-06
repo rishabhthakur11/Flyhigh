@@ -1,5 +1,5 @@
 import BannerSection from "@/components/BannerSection";
-import Footer from "@/components/Footer";
+import Footer from "./dashboard/_components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Stocks from "@/components/Stocks";
@@ -7,8 +7,8 @@ import Wallet from "@/components/Wallet";
 
 export default function Home() {
   return (
-    <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:5rem_4rem]">
-      <div className="max-w-6xl mx-auto">
+    <div className="absolute inset-0 -z-10 h-[1000px] w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]">
+      <div className="">
         <Navbar />
       </div>
       <div>

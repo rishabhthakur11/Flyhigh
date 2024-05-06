@@ -6,7 +6,7 @@ export default function HeroSection() {
     <>
       <div>
         <div className="isolate px-6 lg:px-8 z-10 max-w-7xl mx-auto">
-          <div className="mx-auto max-w-3xl pt-20 lg:pt-20">
+          <div className="mx-auto max-w-4xl pt-20 lg:pt-20">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="bg-[#B8F5F9] rounded-full px-16 py-2 text-lg text-black">
                 Explore inspiring designs
@@ -33,7 +33,7 @@ export default function HeroSection() {
           <div className="-z-10">
             <Image
               src={heroImage}
-              width={700}
+              width={650}
               alt="heroImage"
               className="lg:mx-auto"
               priority
