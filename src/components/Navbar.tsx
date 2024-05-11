@@ -11,15 +11,17 @@ import { UserButton } from "@clerk/nextjs";
 type Props = {};
 
 function Navbar({}: Props) {
-  const {isSignedIn } = useAuth();
+  const { isSignedIn } = useAuth();
   return (
     <div className="flex py-5 items-center px-5 navbar">
       {/* leftSide */}
       <div className="flex gap-x-24 text-black  items-center grow">
         <Link href="/">
           <div className="flex items-center gap-x-2">
-            <Image src={logo} width={50} height={50} alt="FLY HIGH" priority />
-            <p className="text-xl font-semibold curser-pointer">FLY HIGH</p>
+            <Image src={logo} width={30} height={50} alt="FLY HIGH" priority />
+            <p className="text-md md:text-xl font-semibold curser-pointer">
+              FLY HIGH
+            </p>
           </div>
         </Link>
         <div className="flex gap-x-12 text-lg font-normal hidden lg:flex">
@@ -30,11 +32,11 @@ function Navbar({}: Props) {
       </div>
 
       <div>
-        <div className="hidden lg:flex gap-x-7 text-lg text-black font-normal items-center">
+        <div className="flex gap-x-7 text-lg text-black font-normal items-center">
           {isSignedIn ? (
             <>
               <Link href="/create-project">
-                <Button>
+                <Button size="sm">
                   <p>Create Project</p>
                 </Button>
               </Link>

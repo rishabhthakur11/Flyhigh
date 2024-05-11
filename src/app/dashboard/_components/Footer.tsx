@@ -27,7 +27,7 @@ const Footer = () => (
     <div className="flex flex-col gap-12 w-full">
       <div className="flex items-start flex-col">
         <div className="flex items-center gap-x-2">
-          <Image src={logo} width={50} height={50} alt="FLY HIGH" priority />
+          <Image src={logo} width={30} height={50} alt="FLY HIGH" priority />
           <p className="text-xl font-semibold curser-pointer">FLY HIGH</p>
         </div>
 
