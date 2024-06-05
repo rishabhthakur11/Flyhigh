@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title:
       'Flyhigh - Discover the World’s Top Designers & Creative Professionals',
     description:
-      'Find Top Designers & Creative Professionals on Bribbble. We are where designers gain inspiration, feedback, community, and jobs.'
+      'Find Top Designers & Creative Professionals on Flyhigh. We are where designers gain inspiration, feedback, community, and jobs.'
   }
 };
 

@@ -7,8 +7,11 @@ import { NextResponse } from 'next/server';
 export default authMiddleware({
   publicRoutes: ['(^(?!/(?:account|upload-new|add-info)|.*/edit$)/.*$)', '/'],
 
+
 });
 
 export const config = {
   matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)']
 };
+
+

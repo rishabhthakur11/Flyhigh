@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import { SignIn } from '@clerk/nextjs';
 
 export const metadata: Metadata = {
-  title: 'Sign In | Bribbble',
+  title: 'Sign In | Flyhigh',
   description:
-    'Sign in to your Bribbble account, the world’s leading community for designers to share, grow, and get hired.'
+    'Sign in to your flyhigh account, the world’s leading community for designers to share, grow, and get hired.'
 };
 
 export default function SignInPage() {
