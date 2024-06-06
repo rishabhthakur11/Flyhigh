@@ -61,7 +61,7 @@ export default function WorkList({
             <span className="absolute right-[60px] bottom-[20px] md:right-[120px] md:bottom-[40px] text-[#dbdbde] text-xs">
               Art by{" "}
               <Link href="/dashboard" className="underline">
-                Pragya
+                Pragya Singh
               </Link>
             </span>
           </div>

@@ -1,8 +1,8 @@
-# [Bribbble](https://bribbble.salimi.my) &middot; [![Author Salimi](https://img.shields.io/badge/Author-Salimi-%3C%3E)](https://www.linkedin.com/in/mohamad-salimi/)
+# [FLYHIGH](https://flyyhigh.vercel.app) &middot; [![PRAGYA SINGH](https://img.shields.io/badge/Author-Pragya_Singh-%253C%253E)](https://www.linkedin.com/in/pragyasingh1001)
 
-This is a Dribbble clone app created using Next.js for educational purposes. Bribbble is an app that brings the vibrant and inspiring world of design right to your fingertips. Bribbble is your go-to platform for sharing, discovering, and celebrating creative brilliance, just like the original Dribbble.
+This is a Flyhigh app created using Next.js for educational purposes. Flyhigh is an app that brings the vibrant and inspiring world of design right to your fingertips. Flyhigh is your go-to platform for sharing, discovering, and celebrating creative brilliance, just like the original Dribbble.
 
-## Dribbble Clone
+## FLYHIGH FEATURES
 
 - Search & filter functions
 - Authentication using Clerk
@@ -37,9 +37,9 @@ npm run dev
 
 ## Demo
 
-The app is hosted on Vercel. [Click here](https://bribbble.salimi.my) to visit.
+The app is hosted on Vercel. [Click here](https://flyyhigh.vercel.app) to visit.
 <br>
-Direct link: `https://bribbble.salimi.my`
+Direct link: `https://flyyhigh.vercel.app`
 
 ## Screenshots
 

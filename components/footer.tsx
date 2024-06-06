@@ -75,7 +75,7 @@ export default function Footer() {
           <li>
             &copy; {new Date().getFullYear()} FlyHigh. Created by{" "}
             <Link
-              href="https://flyyhigh.vercel.app"
+              href="https://www.linkedin.com/in/pragyasingh1001"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium hover:underline underline-offset-4"

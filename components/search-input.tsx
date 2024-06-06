@@ -1,51 +1,55 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Search } from 'lucide-react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useState } from "react";
+import { Search } from "lucide-react";
+import { useRouter, useSearchParams } from "next/navigation";
 
-import useOrigin from '@/hooks/use-origin';
-import { Input } from '@/components/ui/input';
+import useOrigin from "@/hooks/use-origin";
+import { Input } from "@/components/ui/input";
+import { set } from "date-fns";
 
 export default function SearchInput() {
   const router = useRouter();
   const origin = useOrigin();
   const searchParams = useSearchParams();
-  const [searchVal, setSearchVal] = useState('');
+  const [searchVal, setSearchVal] = useState("");
 
-  const category = searchParams.get('category');
+  const category = searchParams.get("category");
 
   const handleSearch = () => {
     if (category === null) {
-      router.push(`${origin}?search=${searchVal}`);
+      router.push(`/dashboard/?search=${searchVal}`);
     } else {
-      router.push(`${origin}?search=${searchVal}&category=${category}`);
+      router.push(`/dashboard/?search=${searchVal}&category=${category}`);
     }
+    setSearchVal("");
   };
 
   const handleMobileSearch = () => {
     if (category === null) {
-      router.push(`${origin}?search=`);
+      router.push(`/dashboard/?search=`);
     } else {
-      router.push(`${origin}?search=&category=${category}`);
+      router.push(`/dashboard/?search=&category=${category}`);
     }
+    setSearchVal("");
   };
 
   return (
     <>
       <form action={handleSearch}>
-        <div className='hidden xl:flex justify-between items-center h-12 rounded-full focus-within:outline-none focus-within:ring-0 bg-[#f4f5fb]'>
-          <Search className='h-5 w-5 ms-5 me-2 text-muted-foreground' />
+        <div className="hidden xl:flex justify-between items-center h-12 rounded-full focus-within:outline-none focus-within:ring-0 bg-[#f4f5fb]">
+          <Search className="h-5 w-5 ms-5 me-2 text-muted-foreground" />
           <Input
+            value={searchVal}
             onChange={(e) => setSearchVal(e.target.value)}
-            placeholder='Search...'
-            className='h-8 border-none shadow-none pl-0 focus-visible:ring-0'
+            placeholder="Search..."
+            className="h-8 border-none shadow-none pl-0 focus-visible:ring-0"
           />
         </div>
       </form>
       <Search
         onClick={handleMobileSearch}
-        className='h-[22px] w-[22px] xl:hidden'
+        className="h-[22px] w-[22px] xl:hidden"
       />
     </>
   );

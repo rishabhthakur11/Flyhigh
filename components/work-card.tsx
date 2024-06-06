@@ -76,7 +76,7 @@ export default function WorkCard({
           )}
           {!isLoading && data && data.user && data.profile && (
             <Link
-              href={`/${data.profile.username}`}
+              href={`/dashboard/${data.profile.username}`}
               className="w-full flex justify-start items-center space-x-2"
             >
               <Avatar className="h-6 w-6">

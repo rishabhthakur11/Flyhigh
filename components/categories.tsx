@@ -48,15 +48,15 @@ export default function Categories() {
   const handleFilter = (item: string) => {
     if (item === 'Discover') {
       if (search === null) {
-        router.push(`${origin}`);
+        router.push(`/dashboard`);
       } else {
-        router.push(`${origin}?search=${search}`);
+        router.push(`/dashboard/?search=${search}`);
       }
     } else {
       if (search === null) {
-        router.push(`${origin}?category=${item}`);
+        router.push(`/dashboard/?category=${item}`);
       } else {
-        router.push(`${origin}?search=${search}&category=${item}`);
+        router.push(`/dashboard/?search=${search}&category=${item}`);
       }
     }
   };
