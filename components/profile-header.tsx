@@ -25,6 +25,8 @@ export default function ProfileHeader({
     return (Math.floor(Math.random() * (max - min + 1)) + min).toLocaleString();
   };
 
+  const mailtoLink = `mailto:${user.emailAddresses[0].emailAddress}`;
+
   return (
     <>
       {/* profile header with no work */}
@@ -45,7 +47,7 @@ export default function ProfileHeader({
               <p className="mb-2 text-[#9e9ea7]">{profile.bio}</p>
               <div className="mt-[14px] flex space-x-3">
                 <Button className="rounded-full h-12 px-6 font-semibold hover:opacity-80">
-                  Get in touch
+                  <Link href={mailtoLink}>Get in touch</Link>
                 </Button>
                 {isOwner && (
                   <Button
@@ -111,7 +113,7 @@ export default function ProfileHeader({
             </div>
             <div className="mt-6 flex space-x-3">
               <Button className="rounded-full h-12 px-6 font-semibold hover:opacity-80">
-                Get in touch
+                <Link href={mailtoLink}>Get in touch</Link>
               </Button>
               {isOwner && (
                 <Button
